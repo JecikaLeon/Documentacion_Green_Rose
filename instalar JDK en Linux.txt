@@ -1,0 +1,81 @@
+tar xvzf jdk-8u261-linux-x64.tar.gz
+
+jdk1.8.0_261/ /usr/java
+
+jdk1.8.0_261 = [VERSION]
+
+
+----Crear Carpeta
+
+mkdir /usr/java/jdk[VERSION]
+
+
+----Mover JDK
+
+mv  /usr/java/jdk[VERSION]
+
+
+----Actualizar Alterntivas
+
+
+update-alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_261/bin/java 1551
+
+update-alternatives --install /usr/bin/javadoc javadoc /usr/java/jdk1.8.0_261/bin/javadoc 1551
+
+update-alternatives --install /usr/bin/jar jar /usr/java/jdk1.8.0_261/bin/jar 1551
+
+update-alternatives --install /usr/bin/javap javap /usr/java/jdk1.8.0_261/bin/javap 1551
+
+update-alternatives --install /usr/bin/javac javac /usr/java/jdk1.8.0_261/bin/javac 1551
+
+update-alternatives --install /usr/bin/javaws javaws /usr/java/jdk1.8.0_261/bin/javaws 1551
+
+update-alternatives --install /usr/bin/javah javah /usr/java/jdk1.8.0_261/bin/javah 1551
+
+update-alternatives --install /usr/bin/jarsigner jarsigner /usr/java/jdk1.8.0_261/bin/jarsigner 1551
+
+
+
+----Establecer JDK Predeterminado
+
+
+update-alternatives --config java
+
+***********************************************************************************************************
+
+
+----Crear Carpeta
+
+mkdir /usr/java/jdk[VERSION]
+
+
+----Mover JDK
+
+mv  /usr/java/jdk[VERSION]
+
+
+----Actualizar Alterntivas
+
+
+update-alternatives --install /usr/bin/java java /usr/java/[VERSION]/bin/java 1551
+
+update-alternatives --install /usr/bin/javadoc javadoc /usr/java/[VERSION]/bin/javadoc 1551
+
+update-alternatives --install /usr/bin/jar jar /usr/java/[VERSION]/bin/jar 1551
+
+update-alternatives --install /usr/bin/javap javap /usr/java/[VERSION]/bin/javap 1551
+
+update-alternatives --install /usr/bin/javac javac /usr/java/[VERSION]/bin/javac 1551
+
+update-alternatives --install /usr/bin/javaws javaws /usr/java/[VERSION]/bin/javaws 1551
+
+update-alternatives --install /usr/bin/javah javah /usr/java/[VERSION]/bin/javah 1551
+
+update-alternatives --install /usr/bin/jarsigner jarsigner /usr/java/[VERSION]/bin/jarsigner 1551
+
+
+
+----Establecer JDK Predeterminado
+
+
+update-alternatives --config java
